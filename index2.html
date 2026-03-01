@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FarmaClub</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#eaf4f8;
+}
+
+header{
+    background-color:#a9d3e6;
+    color:black;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.section{
+    padding:30px;
+    margin:20px;
+    background-color:white;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.section h2{
+    color:black;
+    border-bottom:2px solid #a9d3e6;
+    padding-bottom:10px;
+}
+
+input, select{
+    width:100%;
+    padding:8px;
+    margin:5px 0 15px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background-color:#a9d3e6;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background-color:#8cc4dc;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>FarmaClub</h1>
+    <p>Medicamentos compatibles, pacientes seguros</p>
+</header>
+
+<div class="section">
+    <h2>Modo Médico</h2>
+
+    <h3>Registro Profesional</h3>
+    <input type="text" placeholder="Nombre completo">
+    <input type="text" placeholder="Número de cédula profesional">
+    <input type="text" placeholder="Especialidad">
+    <input type="email" placeholder="Correo institucional">
+    <button>Verificar Cédula</button>
+
+    <h3>Registro de Paciente</h3>
+    <input type="text" placeholder="Nombre del paciente">
+    <input type="number" placeholder="Edad">
+    <input type="number" placeholder="Peso">
+    <input type="text" placeholder="Alergias">
+    <input type="text" placeholder="Medicamentos actuales">
+
+    <h3>Prescripción</h3>
+    <input type="text" placeholder="Agregar medicamento">
+    <button>Analizar Interacciones</button>
+
+    <h3>Generar Horarios</h3>
+    <button>Crear Esquema Personalizado</button>
+</div>
+
+<div class="section">
+    <h2>Modo Paciente</h2>
+
+    <h3>Registro</h3>
+    <input type="text" placeholder="Nombre completo">
+    <input type="number" placeholder="Edad">
+    <input type="file" placeholder="Subir credencial de elector (frente)">
+    <input type="file" placeholder="Subir credencial de elector (reverso)">
+    <button>Verificar Identidad</button>
+
+    <h3>Mi Tratamiento</h3>
+    <p>• Visualización organizada de medicamentos</p>
+    <p>• Recordatorios automáticos</p>
+    <p>• Alertas en caso de omisión de dosis</p>
+</div>
+
+</body>
+</html>
